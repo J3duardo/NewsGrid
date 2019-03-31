@@ -58,7 +58,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   padding: 1rem;
-  z-index: 2;
+  z-index: 3;
+  background-color: var(--light-color);
 }
 
 .main-nav .container {
@@ -124,4 +125,57 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav__menu a:hover {
   background-color: #dbdbdb;
   color: var(--dark-color);
+}
+
+
+/* Estilos del showcase */
+.showcase {
+  position: relative;
+  z-index: 1;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/featured.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.showcase .container {
+  position: relative;
+  height: 100%;
+  color: #fff;
+}
+
+.showcase__content {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%)
+}
+
+.showcase__category {
+  display: inline-block;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 100px;
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+
+.showcase__title {
+  font-size: 2rem;
+}
+
+.showcase__description {
+  margin-bottom: 1rem;
+}
+
+.showcase__button {
+  padding: 0.7rem 1rem;
+  font-family: inherit;
+  border: none;
+  color: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
