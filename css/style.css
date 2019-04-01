@@ -4,9 +4,6 @@
   --light-color: #f3f3f3;
   --dark-color: #333;
   --max-width: 1100px;
-}
-
-.category {
   --sports-color: #f99500;
   --ent-color: #a66bbe;
   --tech-color: #009cff;
@@ -59,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 1rem;
   z-index: 3;
-  background-color: var(--light-color);
+  background-color: #fff;
 }
 
 .main-nav .container {
@@ -178,4 +175,102 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background-color: var(--primary-color);
   cursor: pointer;
+}
+
+
+/* Estilos de la sección de artículos */
+.news {
+  padding: 2rem 0;
+  background-color: var(--light-color);
+}
+
+.news__articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.news__article {
+  padding: 1rem;
+  background-color: #fff; 
+}
+
+.news__article.horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.news__article:first-child {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.news__article.horizontal .news__article-content {
+  width: 48%;
+}
+
+.news__article.horizontal .news__article-img {
+  width: 50%;
+}
+
+.news__article:nth-child(2) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.news__article:nth-child(6) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.news__article:nth-child(7) {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.simple-dark {
+  color: #fff;
+  background-color: var(--dark-color);
+}
+
+.simple-dark a {
+  color: #fff;
+}
+
+.simple-red {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.simple-red a {
+  color: #fff;
+}
+
+.news__article-img img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.news__article-content p:first-of-type {
+  display: inline-block;
+  padding: 0.2rem 0.3rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.6rem;
+  border-radius: 100px;
+  border: 1px solid;
+  color: #fff;
+}
+
+.news__article-content .entertainment {
+  background-color: var(--ent-color);
+}
+
+.news__article-content .sports {
+  background-color: var(--sports-color);
+}
+
+.news__article-content .technology {
+  background-color: var(--tech-color);
 }
