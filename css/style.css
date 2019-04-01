@@ -274,3 +274,76 @@ h1, h2, h3, h4, h5, h6 {
 .news__article-content .technology {
   background-color: var(--tech-color);
 }
+
+
+/* Estilos del footer */
+.footer {
+  padding: 2rem 0;
+  color: #fff;
+  background-color: var(--dark-color);
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer__articles-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.footer__item {
+  width: 23%;
+}
+
+.footer__logo img {
+  display: block;
+  width: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__newsletter p, .footer__newsletter input{
+  margin-bottom: 0.5rem;
+}
+
+.footer__newsletter input {
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+  font-family: inherit;
+  color: #777;
+}
+
+.footer__newsletter button, .footer__join button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+
+.footer__links a {
+  display: block;
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #777;
+}
+
+.footer__join p {
+  margin-bottom: 0.5rem;
+}
+
+.footer__join button {
+  width: auto;
+  background-color: var(--sports-color);
+}
+
+.footer__copyright {
+  background-color: #777;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+}
