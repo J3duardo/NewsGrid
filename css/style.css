@@ -347,3 +347,56 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 0.75rem;
 }
+
+
+/* Estilos de la página about */
+.about {
+  margin-top: calc(2rem + 40px);
+  padding: 2rem;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.about__article {
+  padding: 1rem;
+  grid-column: 1/4;
+  grid-row: 1/4;
+  background-color: #fff;
+}
+
+.about__article h1 {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.about__article p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.about__aside {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  padding: 1rem;
+
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.about__aside p {
+  margin-bottom: 1rem;
+}
+
+.about__aside a {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: var(--dark-color);
+}
