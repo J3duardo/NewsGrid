@@ -1,0 +1,18 @@
+/* Navigation */
+.main-nav__social {
+  display: none;
+}
+
+.main-nav__social-container {
+  justify-content: center;
+}
+
+.main-nav .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav img {
+  margin-bottom: 1rem;
+}
