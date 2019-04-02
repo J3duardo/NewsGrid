@@ -18,6 +18,12 @@
 }
 
 
+/* Showcase */
+.showcase__content {
+  top: 60%;
+}
+
+
 /* Artículos */
 .news__articles {
   grid-template-columns: repeat(2, 1fr);
@@ -84,4 +90,21 @@
 
 .news__article:last-child img {
   margin-bottom: 0;
+}
+
+
+@media (max-width: 600px) {
+  /* Showcase */
+  .showcase__content {
+    width: 100%;
+  }
+
+  /* Artículos */
+  .news__articles {
+    display: block;
+  }
+
+  .news__articles > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }

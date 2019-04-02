@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 .showcase__content {
   position: absolute;
   width: 50%;
+  padding: 0 2rem;
   top: 50%;
   left: 0;
   transform: translate(0, -50%)
