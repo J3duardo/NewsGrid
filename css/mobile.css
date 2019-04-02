@@ -131,3 +131,21 @@
     margin-bottom: 2rem;
   }
 }
+
+
+/* Página About */
+.about {
+  margin-top: 8rem;
+}
+
+.about__container {
+  display: block;
+}
+
+.about__article {
+  margin-bottom: 1rem;
+}
+
+.about__aside {
+  text-align: center;
+}
