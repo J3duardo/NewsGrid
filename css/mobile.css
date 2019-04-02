@@ -92,6 +92,15 @@
   margin-bottom: 0;
 }
 
+/* Footer */
+.footer__item {
+  width: 48%;
+}
+
+.footer__item:first-child, .footer__item:nth-child(2) {
+  margin-bottom: 1rem;
+}
+
 
 @media (max-width: 600px) {
   /* Showcase */
@@ -106,5 +115,18 @@
 
   .news__articles > *:not(:last-child) {
     margin-bottom: 1rem;
+  }
+
+  /* Footer */
+  .footer__articles-container {
+    margin-bottom: 2rem;
+  }
+
+  .footer__item {
+    width: 100%;
+  }
+
+  .footer__item:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }

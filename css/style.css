@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Estilos del footer */
 .footer {
-  padding: 2rem 0;
+  padding-top: 2rem;
   color: #fff;
   background-color: var(--dark-color);
 }
@@ -296,11 +296,14 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 
 .footer__item {
   width: 23%;
+  flex-shrink: 0;
 }
 
 .footer__logo img {
